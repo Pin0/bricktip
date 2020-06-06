@@ -1,0 +1,75 @@
+#popup {
+    width: 300px;
+}
+#popup h1 img {
+    vertical-align: middle;
+}
+#popup h1 {
+    vertical-align: middle;
+    color: #bd2e2e;
+    font-size: 22px;
+    font-style: italic;
+}
+#sets {
+    padding: 0;
+}
+
+#sets h2, #about h2 {
+    color: #bd2e2e;
+    font-size: 14px;
+    margin: 0;
+}
+#sets ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ui-tabs-panel{
+    padding: 0;
+}
+
+#sets ol li, div.round {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 4px;
+}
+#sets ol li {
+    clear: both;
+}
+
+#sets ol li img {
+    width: 100px;
+    height: auto;
+    float:left;
+    margin: 3px;
+}
+
+#sets .setdata {
+    width: 160px;
+    float: left;
+    padding: 4px;
+}
+#sets ol li label{
+    display: inline-block;
+    width: 60px;
+    font-weight: normal;
+    vertical-align: top;
+}
+#sets ol li span{
+    display: inline-block;
+    width: 50px;
+    font-weight: bold;
+}
+#about{
+    padding: 0;
+}
+.bricktip-clearfix {
+    clear: both;
+}
+#searchfield{
+    width: 90px;
+    height: 25px;
+    margin-top: 3px;
+}

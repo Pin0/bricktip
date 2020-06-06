@@ -1,0 +1,56 @@
+bricktip.lego-set{
+    position: relative;
+    border: 1px solid gray;
+    font-weight: bold;
+    padding: 1px;
+}
+bricktip.set-not-found{
+    border: 0;
+    font-weight: normal;
+    padding: 0;
+}
+div.bricktip-set {
+    clear: both;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 4px;
+}
+div.bricktip-set h2{
+    color: #bd2e2e;
+    font-size: 14px;
+    margin: 0;
+}
+div.bricktip-set img {
+    width: 100px;
+    float:left;
+    margin: 3px;
+}
+div.bricktip-set .setdata {
+    width: 170px;
+    float: left;
+    padding: 4px;
+}
+div.bricktip-set label{
+    display: inline-block;
+    width: 60px;
+    font-weight: normal;
+    vertical-align: top;
+}
+div.bricktip-set span{
+    display: inline-block;
+    width: 50px;
+    font-weight: bold;
+}
+div.bricktip-set a {
+    text-decoration: underline;
+}
+.bricktip_tooltip {
+    padding: 0;
+}
+.bricktip-clearfix {
+    clear: both;
+}
+

@@ -1,0 +1,37 @@
+{
+    "name": "BrickTip! a LEGO(r) Sets Extension",
+    "short_name": "BrickTip!",
+    "version": "1.0.1",
+    "manifest_version": 2,
+    "description": "Displays a tooltip over a known Lego set number on any webpage! BrickTip! is created by M. Nijdam.",
+    "icons": {
+        "16": "icons/bricktip-16x16.png",
+        "48": "icons/bricktip-48x48.png",
+        "128": "icons/bricktip-128x128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "icons/bricktip-19x19.png",
+            "38": "icons/bricktip-38x38.png"
+        },
+        "default_title": "BrickTip! A LEGO(r) Chrome Extension by M.Nijdam",
+        "default_popup": "popup/popup.html"
+    },
+    "web_accessible_resources": [
+        "images/*.png",
+        "icons/*.png"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*","file://*/*"],
+            "exclude_globs": ["*google*"],
+            "js": ["js/jquery-2.1.1.js", "js/jquery-ui.js", "content.js"],
+            "css": ["jquery-ui.css", "css/lego.css"]
+        }
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}

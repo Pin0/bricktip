@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>BrickTip! A LEGO&reg; Chrome Extension by M.Nijdam</title>
+<script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+<link href="../jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="../jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="../css/popup.css" rel="stylesheet" type="text/css">
+</head>
+<body id="popup">
+    <h1>BrickTip!</h1>
+    <div id="tabs">
+        <ul>
+
+            <li><a href="#sets">Sets</a> <input id="searchfield" name="search" type="text" placeholder="search set" />&nbsp;</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#settings"><img src="settings_small.png" width="18" height="18" /></a></li>
+        </ul>
+        <div id="sets">
+        </div>
+        <div id="about">
+            <div class="round">
+                <h2>About BrickTip!</h2>
+                <p>Lego Sets Extension created by M.Nijdam. Displays a tooltip with set information on every number on a page. Found numbers are listed on the popup for easy reference.</p>
+                <p>For questions and/or suggestion concerning this extension please send an email to <a href="mailto:lego-extension@nijdam.nu">lego-extension@nijdam.nu</a>
+                <br />There will be absolutely no guarantee that your email will be answered, but i'll try to do so.
+                <br />The creator of this extension can't be hold responsible for any damage or harm caused by the use of this software. Please uninstall this extension and create a <abbr title="My Own Creation">moc</abbr>.
+                </p>
+                <h2>Todo/possible future features</h2>
+                <ul>
+                    <li><s>Add tab with search field to quickly search a set</s> done in version 1.0.0</li>
+                    <li><s>Setting tab</s> done in version 1.0.0</li>
+                    <li><s>Setting to load extension on all pages without clicking the extension icon</s> done in version 1.0.0</li>
+                    <li><s>Use https version of Brickset api</s> done in version 1.0.0</li>
+                    <li><s>Option to don't show unfound sets</s> done in version 1.0.1</li>
+                    <li>Remember enabled pages</li>
+                    <li>Make grid/list switch for found sets in popup (now there is only list)</li>
+                    <li>User setting for ordering found sets</li>
+                    <li>Option to disable tooltips</li>
+                    <li>Option to rescan page for setnumbers</li>
+                    <li>Setting for sets to ignore</li>
+                    <li>Option to list only sets with images (in found sets, not tooltips)</li>
+                    <li>Etc.</li>
+                </ul>
+                <p>
+                    LEGO<sup>&reg;</sup> is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this tool.
+                </p>
+            </div>
+        </div>
+        <div id="search"></div>
+        <div id="settings">
+            <input type="checkbox" id="tips_on_load" /> Load extension automatically on all pages.<br/>
+            <input type="checkbox" id="dont_show_not_found" /> Don't show tips on numbers that have not set found.
+        </div>
+    </div>
+</body>
+</html>
